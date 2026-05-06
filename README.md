@@ -29,11 +29,44 @@ The system was built using AWS SageMaker Canvas without manual coding and integr
 
 ---
 
-## 🔄 Architecture Flow
+## 🏗️ System Architecture Flow
 
-User Data → SageMaker Canvas → Prediction → Amazon S3 → AWS Lambda → Amazon SNS Alert
-
----
+```text
+Local Dataset / User Behavioral Data
+                │
+                ▼
+       Amazon SageMaker Canvas
+     (Data Preparation & AutoML)
+                │
+                ▼
+      Churn Prediction Model
+   (Binary Classification Model)
+                │
+      ┌─────────┴─────────┐
+      ▼                   ▼
+Batch Predictions    Real-Time Predictions
+(Multiple Users)      (Single User)
+      │                   │
+      └─────────┬─────────┘
+                ▼
+        Prediction Results
+                │
+                ▼
+          Amazon S3 Bucket
+      (Stores Prediction Data)
+                │
+                ▼
+          AWS Lambda Trigger
+   (Processes High-Risk Users)
+                │
+                ▼
+            Amazon SNS
+    (Automated Email Alerts)
+                │
+                ▼
+         Business Stakeholders
+   (Retention & Decision Making)
+```
 
 ## 📊 Model Capabilities
 - Binary classification model
