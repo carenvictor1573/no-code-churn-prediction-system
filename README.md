@@ -84,22 +84,22 @@ Helps businesses identify high-risk users early and take proactive retention act
 ## 📷 Project Screenshots
 
 ### 🔹 Model Overview
-![Model Overview](screenshots/model-overview.png)
+![Model Overview](screenshots/model-overview.jpeg)
 
 ### 🔹 Feature Importance Analysis
-![Feature Analysis](screenshots/feature-analysis.png)
+![Feature Analysis](screenshots/feature-analysis.jpeg)
 
 ### 🔹 Batch Prediction
-![Batch Prediction](screenshots/batch-prediction.png)
+![Batch Prediction](screenshots/batch-prediction.jpeg)
 
 ### 🔹 Real-Time Prediction (High Churn Risk)
-![Single Prediction Yes](screenshots/single-prediction-yes.png)
+![Single Prediction Yes](screenshots/single-prediction-yes.jpeg)
 
 ### 🔹 Real-Time Prediction (Low Churn Risk)
-![Single Prediction No](screenshots/single-prediction-no.png)
+![Single Prediction No](screenshots/single-prediction-no.jpeg)
 
 ### 🔹 Automated SNS Email Alert
-![SNS Alert](screenshots/sns-alert.png)
+![SNS Alert](screenshots/sns-alert.jpeg)
 
 are available in the `screenshots/` folder.
 
